@@ -1,0 +1,26 @@
+doctype html
+head
+    title lista de clientes
+    link(rel="stylesheet", href="/css/estilos.css") 
+    link(rel="stylesheet", href="../css/menu.css") 
+html
+  body
+    include menu.pug
+     
+    table
+      caption LISTA DE PRODUCTOS COMPRADOS
+      th ID
+      th PRODUCTO
+      th PRECIO
+      th CANTIDAD
+      for val in Lista_compras
+        tr
+          td=val.id_compra
+          td=val.nombre_prod
+          td=val.precio_prod
+           td=val.cantidad_comp
+          td
+            a(href='/compra/Eliminar/'+val.id_compra)
+              img(src='/img/eliminar.png',title='Eliminar Compra') 
+     
+          

@@ -1,0 +1,49 @@
+
+.carrito{
+    float: right;
+}
+
+main{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.articulo{
+    display: inline-block;
+    
+    margin:10px;
+    vertical-align: top;
+    text-align: center;
+    width: 176px;
+}
+.articulo div{
+    padding: 1px 0;
+}
+.articulo .imagen img{
+    height: 150px;
+}
+
+.articulo .titulo{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.articulo .precio{
+    font-size: 16px;
+}
+
+
+.button{
+    border: 0;
+    border-radius: 5px;
+    background: rgb(255, 157, 10);
+    cursor: pointer;
+    text-decoration:none;
+    padding: 10px;
+}
+
+
+
+
+
+

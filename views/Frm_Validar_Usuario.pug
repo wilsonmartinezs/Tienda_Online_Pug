@@ -1,0 +1,15 @@
+doctype html
+head
+  title Validar usuarios del sistema
+  link(rel="stylesheet" , href="/css/formulario.css")
+  link(rel="stylesheet", href="../css/menu.css") 
+html
+  body
+    h1 Validar Usuario del Sistema
+    div(class="contenedor")
+      form(action="/cliente/Validar_Cliente", method="post")
+        label <b> Login</b>
+        input(name='log', type='text')
+        label <b> Password</b>
+        input(name='pas', type='password')
+        input(value='Validar', type='submit',class='registrar')

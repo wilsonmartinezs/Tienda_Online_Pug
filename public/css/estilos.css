@@ -1,0 +1,35 @@
+
+body{
+   background-color: #EAEAEB;
+}
+a{
+   font-size: 12px;
+}
+table {
+   border-collapse: collapse;
+   margin: auto;
+   align-items: center;
+   margin-top: 20px;
+ }
+ tr{
+    border-bottom: 2px solid #fff;
+ }
+ 
+ td {
+    padding: 10px;
+ }
+ th {
+  padding: 10px;
+}
+ caption {
+    text-align: center;
+    border-bottom: 2px solid darkcyan;
+    border-top:  2px solid darkcyan;
+    font-weight: 900;
+    padding: 0.3em;
+    font-size: 1.5em;
+ }
+ .boton_registrar{
+    padding-left: 300px;
+ }
+

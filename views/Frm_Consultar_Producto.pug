@@ -1,0 +1,31 @@
+doctype html
+head
+    title lista de clientes
+    link(rel="stylesheet", href="/css/estilos.css") 
+    link(rel="stylesheet", href="../css/menu.css") 
+html
+  body
+    include menu.pug
+    a(class='boton_registrar',href='../cliente/registrar')
+      img(src='/img/nuevo.png',title='Nuevo Producto')        
+    table
+      caption LISTA DE PRODUCTOS DE LA TIENDA ONLINE
+      th ID
+      th CODIGO
+      th PRODUCTO
+      th PRECIO
+      th STOCK
+      th ADMIN
+      for val in Lista_Productos
+        tr
+          td=val.id_producto
+          td=val.codigo_prod
+          td=val.nombre_prod
+          td=val.precio_prod
+           td=val.stock
+          td
+            a(href='../producto/Eliminar/'+val.id_producto)
+              img(src='/img/eliminar.png',title='Eliminar Producto') 
+            a(href='../producto/Buscar/'+val.id_producto)
+              img(src='/img/actualizar.png',width=30,title='Actualizar Producto')
+          

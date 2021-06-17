@@ -1,0 +1,20 @@
+doctype html
+head
+  title Registro de clientes
+  link(rel="stylesheet" , href="/css/formulario.css")
+  link(rel="stylesheet", href="../css/menu.css") 
+html
+  body
+    include menu.pug
+    h1 Registro de Clientes
+    div(class="contenedor")
+      form(action="../cliente/Registrar_Cliente", method="post")
+        label <b> Cedula</b>
+        input(name='cedula', type='number')
+        label <b> Nombre</b>
+        input(name='nombre', type='text')
+        label <b> Direccion</b>
+        input(name='direccion', type='text')
+        label <b> Telefono</b>
+        input(name='Telefono', type='text')
+        input(value='Registrar', type='submit',class='registrar')

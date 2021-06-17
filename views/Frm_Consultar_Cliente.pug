@@ -1,0 +1,38 @@
+doctype html
+head
+    title lista de clientes
+    link(rel="stylesheet", href="/css/estilos.css") 
+  
+html
+  body
+    include menu.pug
+    a(class='boton_registrar',href='../cliente/registrar')
+         img(src='/img/nuevo.png',title='Nuevo Cliente')
+
+    table
+      caption LISTA DE CLIENTE DE LA TIENDA ONLINE
+      th CEDULA
+      th NOMBRES
+      th DIRECCION
+      th TELEFONO
+      th ADMIN
+      for val in Lista_Clientes
+        tr
+          td=val.cedula
+          td=val.nombre
+          td=val.direccion
+          td=val.telefono
+          td
+            a(href='../cliente/Eliminar/'+val.cedula) 
+              img(src='/img/eliminar.png',title='Eliminar Cliente')
+             
+            a(href='../cliente/Buscar/'+val.cedula) 
+               img(src='/img/actualizar.png',width=30,title='Actualizar Cliente')
+               
+          
+
+         
+    
+    
+  
+
